@@ -1,0 +1,7 @@
+psutil>=5.9.5
+pywin32>=305
+pynput>=1.7.6
+prometheus-client>=0.17.1
+Pillow>=10.0.1
+fire>=0.5.0
+matplotlib>=3.6.2
