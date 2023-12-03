@@ -23,7 +23,7 @@ def _记录(name, *args):
     t = time.time()
     s = json.dumps([t, name, args], ensure_ascii=False, default=_json_default)
     print('记录', s)
-    with open(存储目录 / f'{int(t)//3600}.json', 'a') as f:
+    with open(存储目录 / f'{int(t)//3600}.json', 'a', encoding='utf8') as f:
         f.write(s + '\n')
     if name not in _Counters:
         _Counters[name] = prometheus_client.Counter(name, name)
